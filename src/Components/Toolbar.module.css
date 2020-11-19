@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    padding-bottom: 25px;
+}
+
+.button {
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: snow;
+    border: 1px solid;
+}
+
+.active {
+    background-color: dimgray;
+    color: snow;
+}
