@@ -60,11 +60,9 @@ function Portfolio() {
   const [projects, setProjects] = useState(data);
   const [selected, setSelected] = useState("All");
 
-  const onSelectFilter = (event) => {
-    const target = event.currentTarget;
-    setSelected(target.id);
-    if(target.id === 'All') setProjects(data);
-    else setProjects(data.filter(e => e.category === target.id))
+  const onSelectFilter = (elem) => {
+    if(elem=== 'All') setProjects(data);
+    else setProjects(data.filter(e => e.category === elem))
   }
 
     return (
